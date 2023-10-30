@@ -1,5 +1,7 @@
 package com.truecalleroauthsdk;
 
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 
 import com.facebook.react.bridge.Promise;
@@ -28,5 +30,10 @@ public class TruecallerOauthSdkModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void multiply(double a, double b, Promise promise) {
     promise.resolve(a * b);
+  }
+  @ReactMethod
+  public void toast(String s) {
+    Toast.makeText(getReactApplicationContext(),s,Toast.LENGTH_SHORT);
+    promise.resolve(null);
   }
 }
