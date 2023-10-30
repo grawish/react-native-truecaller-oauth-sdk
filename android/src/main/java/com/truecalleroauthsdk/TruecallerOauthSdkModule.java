@@ -32,7 +32,7 @@ public class TruecallerOauthSdkModule extends ReactContextBaseJavaModule {
     promise.resolve(a * b);
   }
   @ReactMethod
-  public void toast(String s) {
+  public void toast(String s, Promise promise) {
     Toast.makeText(getReactApplicationContext(),s,Toast.LENGTH_SHORT);
     promise.resolve(null);
   }
