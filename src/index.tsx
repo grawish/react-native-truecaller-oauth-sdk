@@ -20,3 +20,7 @@ const TruecallerOauthSdk = NativeModules.TruecallerOauthSdk
 export function multiply(a: number, b: number): Promise<number> {
   return TruecallerOauthSdk.multiply(a, b);
 }
+
+export function toast(s: string): void {
+  TruecallerOauthSdk.toast(s);
+}
