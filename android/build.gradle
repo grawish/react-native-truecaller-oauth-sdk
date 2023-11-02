@@ -76,6 +76,6 @@ dependencies {
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"
-    implementation 'com.truecaller.android.sdk:truecaller-sdk:${safeExtGet("truecaller-sdk", "3.0.0")}'
+    implementation 'com.truecaller.android.sdk:truecaller-sdk:3.0.0}'
 }
 
