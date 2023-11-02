@@ -52,7 +52,6 @@ public class TruecallerOauthSdkModule extends ReactContextBaseJavaModule {
     super(reactContext);
     TcSdkOptions tcSdkOptions = new TcSdkOptions.Builder(reactContext, tcOAuthCallback);
     TcSdk.init(tcSdkOptions);
-    reactContext.addActivityEventListener(mActivityEventListener);
   }
 
   @Override
