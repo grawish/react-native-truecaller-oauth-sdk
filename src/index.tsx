@@ -24,3 +24,11 @@ export function multiply(a: number, b: number): Promise<number> {
 export function toast(s: string): void {
   TruecallerOauthSdk.toast(s);
 }
+
+export function isUsable(): Promise<void> {
+  return TruecallerOauthSdk.isUsable();
+}
+
+export function authenticate(): Promise<void> {
+  return TruecallerOauthSdk.authenticate();
+}
